@@ -1,0 +1,19 @@
+components:
+  schemas:
+    Users:
+      type: object
+      required: true
+      properties:
+        userName:
+          type: string
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+        password:
+          type: string
+        status:
+          type: string
+        userType:
+          type: string

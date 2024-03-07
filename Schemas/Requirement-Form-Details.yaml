@@ -1,0 +1,276 @@
+components:
+  schemas:
+    RequirementFormDetails:
+      type: object
+      required: true
+      properties:
+        userId:
+          type: string
+        serviceCode:
+          type: string
+        serviceType:
+          type: string
+        dateOfIncident:
+          type: string
+        timeOfIncident:
+          type: string
+        incidentLocation:
+          type: object
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            postalCode:
+              type: string
+        incident_destinationDeterminant:
+          type: string
+        graphicLocatorgraphicLocator:
+          type: string
+        sceneLocationType:
+          type: string
+        destinationFacility:
+          type: string
+        sceneFacility:
+          type: string
+        destinationLocationType:
+          type: string
+        destinationLocation:
+          type: object
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            postalCode:
+              type: string
+        servicePayment:
+          type: object
+          properties:
+            responsibility:
+              type: string
+            number:
+              type: string
+        EMS:
+          type: string
+        patientDisposition:
+          type: string
+        firstName:
+          type: string
+        sureName:
+          type: string
+        address:
+          type: object
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            country:
+              type: string
+            postalCode:
+              type: string
+        telePhone:
+          type: string
+        DOB:
+          type: string
+        age:
+          type: string
+        gender:
+          type: string
+        aadhar:
+          type: string
+        medicalInsurance:
+          type: string
+        typeOfInsurance:
+          type: string
+        governmentInsurance:
+          type: object
+          properties:
+            insuranceId:
+              type: string
+            coverageAmount:
+              type: string
+            benefits:
+              type: string
+        privateInsurance:
+          type: object
+          properties:
+            insuranceId:
+              type: string
+            benefits:
+              type: string
+        hospitalChart:
+          type: string
+        comments:
+          type: string
+        timeNotified:
+          type: string
+        timeEnroute:
+          type: string
+        timeAtScene:
+          type: string
+        crewPatient:
+          type: string
+        timeOutScene:
+          type: string
+        timeAtDestination:
+          type: string
+        available:
+          type: string
+        backArea:
+          type: string
+        responseToScene:
+          type: object
+          properties:
+            type:
+              type: string
+            changeInResponse:
+              type: string
+        responseFromScene:
+          type: object
+          properties:
+            type:
+              type: string
+            changeInResponse:
+              type: string
+        crewType:
+          type: object
+          properties:
+            driver:
+              type: string
+            attendent:
+              type: string
+            assisting:
+              type: string
+        mileage:
+          type: object
+          properties:
+            out:
+              type: string
+            in:
+              type: string
+            atScene:
+              type: string
+            atDestination:
+              type: string
+            total:
+              type: string
+        patientContact:
+          type: string
+        vehicle_destinationDeterminant:
+          type: string
+        startDate:
+          type: string
+        endDate:
+          type: string
+        dateModified:
+          type: string
+        dateOfInjury:
+          type: string
+        timeOfInjury:
+          type: string
+        coResponders:
+          type: string
+        treatmentRendered:
+          type: string
+        patientCondition:
+          type: string
+        patientDisplacement:
+          type: string
+        suspectedIntoxication:
+          type: string
+        chiefComplaint:
+          type: string
+        neroResponse:
+          type: string
+        bodySystem:
+          type: string
+        glasGlow:
+          type: string
+        generalAssessment:
+          type: string
+        airway:
+          type: string
+        symptoms:
+          type: string
+        respiration:
+          type: string
+        seizure:
+          type: string
+        toxicExposure:
+          type: string
+        cardiacArrest:
+          type: string
+        chestPain:
+          type: string
+        neonatal:
+          type: string
+        obstetric:
+          type: string
+        trauma:
+          type: string
+        procedureStartTime:
+          type: string
+        procedureType:
+          type: string
+        procedureEndTime:
+          type: string
+        deviceMethod:
+          type: string
+        technicianID:
+          type: string
+        deviceSize:
+          type: string
+        outcome:
+          type: string
+        successfull:
+          type: string
+        treatment:
+          type: string
+        totalTime:
+          type: string
+        treatmentType:
+          type: string
+        administrativeRoute:
+          type: string
+        assessmentTime:
+          type: string
+        consciousnessLevel:
+          type: string
+        pulseRate:
+          type: string
+        siteOfPulseCheck:
+          type: string
+        temperature:
+          type: string
+        siteOfTemperatureCheck:
+          type: string
+        skinColor:
+          type: string
+        moisture:
+          type: string
+        bloodPressure:
+          type: object
+          properties:
+            systolic:
+              type: string
+            diastolic:
+              type: string
+        treatment_respiration:
+          type: string
+        bloodGlucose:
+          type: string
+        oxygenSaturation:
+          type: object
+          properties:
+            preOxygen:
+              type: string
+            postOxygen:
+              type: string

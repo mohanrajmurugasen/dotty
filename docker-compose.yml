@@ -1,0 +1,22 @@
+################################################
+#   MongoDB container setup for DottyCare.
+#   This container is experimental, as we
+#   are not yet aware (as of Feb 23 2024)
+#   as to how MongoDB exactly interacts
+#   with the platform.
+#
+#   @Matthew K. Peterson
+#   @February 23 2024
+################################################
+
+
+# Use root/example as user/password credentials
+services:
+  databased:
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"
